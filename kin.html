@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next of kin</title>
+    <link rel="canonical" href="https://mazarine-energy.com/" />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://mazarine-energy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmazarine-energy.com%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://mazarine-energy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmazarine-energy.com%2F&#038;format=xml" />
+    <link rel="icon" href="https://mazarine-energy.com/wp-content/themes/mazarine-energy/img/favicon.png" type="image/png">
+    <link href="//api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet" type="text/css">
+    <link href="https://mazarine-energy.com/wp-content/themes/mazarine-energy/css/global.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .kin:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div style="
+        background-image: url(images/WhatsApp\ Image\ K\ 2026-10-03\ at\ 5.36.37\ AM.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        width: 100%;">
+
+        <!-- navbar headings from mazarine -->
+       <div class="navbar" role="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-md-3">
+                <div class="navbar__logo"><a href="https://mazarine-energy.com"><img src="https://mazarine-energy.com/wp-content/themes/mazarine-energy/img/logo-mazarine-negative.svg" alt="Mazarine Energy"></a></div>
+            </div>
+            <div class="col-xs-4 col-md-9">
+                <div class="navbar__hamburger pull-right js-trigger--menu">
+                    <div class="navbar__hamburger__icon"><i class="icon icon--hamburger"></i></div>
+                    <div class="navbar__hamburger__title">Menu</div>
+                </div>
+                <div class="navbar__menu">
+                                                                                                                                    <a class="navbar__menu__item" href="https://mazarine-energy.com/about-us/" style="font-weight: bold;">About us</a>
+                                                                                                                                            <span class="navbar__menu__item" style="font-weight: bold;">Operations                                    <ul class="navbar__menu__item__dropdown">
+                                                                                                                                                                                    <li class="navbar__menu__item__dropdown__item">
+                                                    <a href="https://mazarine-energy.com/operations-in-the-netherlands/">Netherlands</a>
+                                                </li>
+                                                                                                                                            <li class="navbar__menu__item__dropdown__item">
+                                                    <a href="https://mazarine-energy.com/operations-romania/">Romania</a>
+                                                </li>
+                                                                                                                                            <li class="navbar__menu__item__dropdown__item">
+                                                    <a href="https://mazarine-energy.com/operations-tunisia/">Tunisia</a>
+                                                </li>
+                                                                                                                        </ul>
+                                </span>
+                                                                                                                                            <a class="navbar__menu__item" href="https://mazarine-energy.com/sustainability/" style="font-weight: bold;">Sustainability</a>
+                                                                                                                                            <a class="navbar__menu__item" href="https://mazarine-energy.com/news/" style="font-weight: bold;">News</a>
+                                                                                                                                            <a class="navbar__menu__item" href="contract.html" style="font-weight: bold;">contract</a>
+                                                                                        </div>
+            </div>
+        </div>
+    </div>
+</div>  
+   <!-- navbar ends here -->
+
+   <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ">
+          
+           <h1 style="color: white; font-size: 70px; margin-top: 220px; font-weight: bold;">NEXT OF KIN</h1>
+           
+        </div>
+
+ </div>
+ <!-- background img ends -->
+
+ <!-- kin details -->
+
+ <div style="display: flex; justify-content: center; padding: 40px 30px;">
+    <div style="padding-right: 30px; margin-top: 30px;">
+      <h1 style="font-size: 30px; margin-left: 30px; font-weight: 800;">NEXT OF KIN</h1>
+      <h2 style="font-size: 20px; font-weight: bold;">NAME: MATTIA FRANK JAMES</h2>
+      <h2 style="font-size: 20px; font-weight: bold;">ADRESS: #171 PRESTON E BOCA RATON, FL 33434</h2>
+      <h2 style="font-size: 20px; font-weight: bold;">DOB: 08/O7/1978</h2>
+    </div>
+
+    <div>
+      <img style="height: 200px;" src="images/WhatsApp Image 2026-10-02 at 5.15.32 PM.jpeg" alt="">
+      <img style="height: 200px; padding-left: 30px;" src="images/WhatsApp Image 2026-10-02 at 5.15.34 PM.jpeg" alt="">
+    </div>
+  
+ </div>
+<!-- kin details ends -->
+
+<!-- accept leave starts -->
+<div style="display: flex; justify-content: center; padding: 30px 0;">
+  <div>
+    <h3 style="font-size: medium;">click to accept leave</h3>
+     <button id="NOK" class="kin" style="background-color: gray; border: none; padding: 20px 10px; border-radius: 15px;">ACCEPT LEAVE FOR <br> JULIAN OLIVER</button>
+
+     <script>
+        const btn = document.getElementById("NOK");
+
+        // get saved text and color
+        const savedText = localStorage.getItem("buttonText");
+        const savedColor = localStorage.getItem("buttonColor")
+        
+        // rsetore them when the page loads
+        if (savedText) {
+            btn.textContent = savedText;
+        }
+
+        if (savedColor) {
+            btn.style.backgroundColor = savedColor;
+        }
+
+        // change text and color when clicked
+        btn.addEventListener("click", function() {
+            btn.textContent = "PENDING!!!";
+            btn.style.backgroundColor = "blue";
+
+        //save them 
+           localStorage.setItem("buttonText", "PENDING!!!");
+           localStorage.setItem("buttonColor", "blue");
+        });
+
+     </script>
+  </div> 
+</div>
+
+<!-- accept leave ends -->
+
+ 
+
+ <!-- kinda outer nav -->
+  <div class="follow-us__outer" style="background-image: url(https://mazarine-energy.com/wp-content/uploads/2019/01/flowus1.jpg);">
+        <div class="container">
+            <div class="follow-us">
+                <div class="follow-us__title">Stay up to date with <br>everything Mazarine</div>
+                <div class="follow-us__cta"><a class="btn btn--large btn--red" href="https://www.linkedin.com/company/mazarine-energy" target="_blank">Follow us on LinkedIn</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__outer">
+    <div class="container">
+        <div class="footer">
+            <div class="row">
+                <div class="col-xs-12 col-md-5">
+                    <div class="footer__logo"><a href="https://mazarine-energy.com"><img src="https://mazarine-energy.com/wp-content/themes/mazarine-energy/img/logo-mazarine.svg" alt="Mazarine Energy"></a>
+                        <p class="desktop-only">We stay ahead through technical leadership and operational excellence from start to finish.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="footer__links">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+    <div class="footer__links__item"><strong>About us</strong>
+        <ul>
+                            <li><a href="https://mazarine-energy.com/about-us/#history">History</a></li>
+                            <li><a href="https://mazarine-energy.com/about-us/#vision">Strategy</a></li>
+                            <li><a href="https://mazarine-energy.com/news/">News</a></li>
+                            <li><a href="https://mazarine-energy.com/privacy-policy/">Privacy</a></li>
+                    </ul>
+    </div>
+
+</div>
+                                    <div class="col-xs-6">
+    <div class="footer__links__item"><strong>Operations</strong>
+        <ul>
+                            <li><a href="https://mazarine-energy.com/operations-romania/">Romania</a></li>
+                            <li><a href="https://mazarine-energy.com/operations-tunisia/">Tunisia</a></li>
+                    </ul>
+    </div>
+
+</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+    <div class="footer__links__item"><strong>Sustainability</strong>
+        <ul>
+                            <li><a href="https://mazarine-energy.com/sustainability/#community">Community</a></li>
+                            <li><a href="https://mazarine-energy.com/sustainability/#hse">HSE</a></li>
+                            <li><a href="https://mazarine-energy.com/sustainability/#environment">Environment</a></li>
+                            <li><a href="https://mazarine-energy.com/sustainability/#ethics">Ethics</a></li>
+                    </ul>
+    </div>
+
+</div>
+                                    <div class="col-xs-6">
+    <div class="footer__links__item"><strong>Contact</strong>
+        <ul>
+                            <li><a href="http://mazarine-energy.com/write-us/" target="_blank">Write us</a></li>
+                            <li><a href="https://mazarine-energy.com/offices/">Offices</a></li>
+                            <li><a href="https://mazarine-energy.com/careers-at-mazarine-energy/">Careers</a></li>
+                    </ul>
+    </div>
+
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+    
+</body>
+</html>
