@@ -1,0 +1,23 @@
+#ego {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+.bado {
+    max-width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 768px) {
+    .pot{
+        flex-direction: column;
+        text-align: center;
+    };
+};
