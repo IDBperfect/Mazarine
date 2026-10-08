@@ -101,33 +101,37 @@
 <div style="display: flex; justify-content: center; padding: 30px 0;">
   <div>
     <h3 style="font-size: medium;">click to accept leave</h3>
-     <button id="NOK" class="kin" style="background-color: gray; border: none; padding: 20px 10px; border-radius: 15px;">ACCEPT LEAVE FOR <br> JULIAN OLIVER</button>
+     <button id="NOK" class="kin" style="background-color: gray; border: none; padding: 20px 10px; border-radius: 15px;">VIEW LEAVE STATUS<br> JULIAN OLIVER</button>
 
      <script>
         const btn = document.getElementById("NOK");
 
-        // get saved text and color
-        const savedText = localStorage.getItem("buttonText");
-        const savedColor = localStorage.getItem("buttonColor")
-        
-        // rsetore them when the page loads
-        if (savedText) {
-            btn.textContent = savedText;
-        }
-
-        if (savedColor) {
-            btn.style.backgroundColor = savedColor;
-        }
-
-        // change text and color when clicked
         btn.addEventListener("click", function() {
-            btn.textContent = "PENDING!!!";
-            btn.style.backgroundColor = "blue";
+            alert("LEAVE NOT APPROVED..MARITAL STATUS NOT CONFIRMED..")
+        })
+        // const btn = document.getElementById("NOK");
 
-        //save them 
-           localStorage.setItem("buttonText", "PENDING!!!");
-           localStorage.setItem("buttonColor", "blue");
-        });
+        // // get saved text and color
+        // const savedText = localStorage.getItem("buttonText");
+        // const savedColor = localStorage.getItem("buttonColor")
+        
+        // // rsetore them when the page loads
+        // if (savedText) {
+        //     btn.textContent = savedText;
+        // }
+
+        // if (savedColor) {
+        //     btn.style.backgroundColor = savedColor;
+        // }
+
+        // // change text and color when clicked
+        // btn.addEventListener("click", function() {
+        //     btn.textContent = "PENDING!!!";
+        //     btn.style.backgroundColor = "blue";
+
+        // //save them 
+        //    localStorage.setItem("buttonText", "PENDING!!!");
+        //    localStorage.setItem("buttonColor", "blue");
 
      </script>
   </div> 
